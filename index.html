@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup & Login System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Sign Up Form -->
+    <div class="container" id="signup-container">
+        <form id="signup-form">
+            <h2>Sign Up</h2>
+            <label for="signup-name">Name</label>
+            <input type="text" id="signup-name" required>
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" required>
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" required>
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+        </form>
+    </div>
+
+    <!-- Login Form -->
+    <div class="container" id="login-container" style="display: none;">
+        <form id="login-form">
+            <h2>Login</h2>
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" required>
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" required>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+        </form>
+    </div>
+
+    <!-- Post Section (Hidden by default) -->
+
+    <div class="container" id="post-container" style="display: none;">
+        <h2>Create a Post</h2>
+        <textarea id="postText" placeholder="Write something..."></textarea>
+        <label for="bgColor">Choose Background Color:</label>
+        <input type="color" id="bgColor">
+        <button id="postBtn">Post</button>
+
+        <h3>Your Posts</h3>
+        <div id="posts"></div>
+        <button id="logout-btn" style="display: none;">Logout</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
